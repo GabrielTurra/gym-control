@@ -7,14 +7,18 @@
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
-    "commit": "cz"
+    "commit": "cz",
+    "eslint:fix": "eslint --ext .js,.ts src --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "20.4.1",
+    "@typescript-eslint/eslint-plugin": "5.61.0",
+    "@typescript-eslint/parser": "5.61.0",
     "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.44.0",
     "tsup": "7.1.0",
     "tsx": "3.12.7",
     "typescript": "5.1.6"
