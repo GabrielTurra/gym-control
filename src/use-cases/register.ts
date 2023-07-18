@@ -4,9 +4,9 @@ import { UserAlreadyExistsError } from "./err/user-already-exists.error";
 import { User } from "@prisma/client";
 
 interface RegisterUseCaseProps {
-    name: string;
-    email: string;
-    password: string;
+  name: string;
+  email: string;
+  password: string;
 }
 
 interface RegisterUseCaseResponse {
