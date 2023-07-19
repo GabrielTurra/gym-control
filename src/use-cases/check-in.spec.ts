@@ -4,8 +4,8 @@ import { CheckInUseCase } from "./check-in";
 import { randomUUID } from "crypto";
 import { InMemoryGymsRepository } from "@/repositories/in-memory/in-memory-gyms.repository";
 import { Decimal } from "@prisma/client/runtime";
-import { MaxNumberOfCheckInsError } from "./err/max-number-of-check-ins-error";
-import { MaxDistanceError } from "./err/max-distance-error";
+import { MaxNumberOfCheckInsError } from "./err/max-number-of-check-ins.error";
+import { MaxDistanceError } from "./err/max-distance.error";
 
 let checkInsRepository: InMemoryCheckInsRepository;
 let gymsRepository: InMemoryGymsRepository;
